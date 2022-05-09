@@ -1,11 +1,15 @@
-import Currency from './3-currency'
+import Currency from './3-currency';
+
 export default class Pricing {
   constructor(amount, currency) {
-  this._amount = amount;
-  this._currency = currency;
+    this._amount = amount;
+    this._currency = currency;
   }
-  get amount() {return this._amount}
-  get currency() {return this._currency}
+
+  get amount() { return this._amount; }
+
+  get currency() { return this._currency; }
+
   set amount(newAmount) {
     if (typeof newAmount !== 'string') { throw Error('Currency must be a string'); }
     this._code = newAmount;
@@ -19,6 +23,7 @@ export default class Pricing {
   displayFullPrice() {
     return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
+
   static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
