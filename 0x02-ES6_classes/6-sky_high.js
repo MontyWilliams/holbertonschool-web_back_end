@@ -1,3 +1,4 @@
+/* eslint no-underscore-dangle: ["error", { "allowAfterThis": true }] */
 import Building from './5-building';
 
 export default class SkyHighBuilding extends Building {
@@ -6,10 +7,13 @@ export default class SkyHighBuilding extends Building {
     this._floors = floors;
   }
 
-  get sqft() { return this._sqft; }
+  set floors(floors) {
+    this._floors = floors;
+  }
 
-  get floors() { return this.floors; }
-
+  get floors() {
+    return this._floors;
+  }
   evacuationWarningMessage() {
     return `Evacuate slowly the ${this._floors} floors`;
   }
