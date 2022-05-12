@@ -1,4 +1,2 @@
-const setFromArray = (Array) => {
-  return new Set(Array)
-};
+const setFromArray = (Array) => new Set(Array);
 export default setFromArray;
