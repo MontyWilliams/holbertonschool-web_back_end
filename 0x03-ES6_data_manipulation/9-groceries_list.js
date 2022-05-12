@@ -1,4 +1,4 @@
-const groceriesList() {
+const groceriesList = () => {
   const newMap = new Map();
   newMap.set('Apples', 10);
   newMap.set('Tomatoes', 10);
@@ -6,5 +6,5 @@ const groceriesList() {
   newMap.set('Rice', 1);
   newMap.set('Banana', 5);
   return newMap;
-}
-export default groceriesList
+};
+export default groceriesList;
