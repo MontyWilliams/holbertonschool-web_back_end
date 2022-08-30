@@ -5,8 +5,8 @@ annotated functions
 """
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """
     return floor(n)
     """
-    return math.floor(n)
+    return int(n)
