@@ -4,5 +4,6 @@ annotations
 """
 
 
-def concat(str1, str2) -> str: 
-    return (str1 + str2)
+def concat(str1:str, str2:str) -> str: 
+    string = (str1 + str2)
+    return (string)
