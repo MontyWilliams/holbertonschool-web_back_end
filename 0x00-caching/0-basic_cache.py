@@ -4,6 +4,10 @@
 from base_caching import BaseCaching
 
 class BasicCache(BaseCaching):
+    """ BasicCache inherits from base_caching.
+        - extends put to add to cache
+        - extends getter to get a value from cache
+    """
     
     
     def __init__(self):
