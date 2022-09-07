@@ -4,6 +4,8 @@
 from base_caching import BaseCaching
 
 class BasicCache(BaseCaching):
+    """This class
+    """
     
 
     def put(self, key, item):
