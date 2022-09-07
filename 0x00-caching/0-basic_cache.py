@@ -4,14 +4,17 @@
 from base_caching import BaseCaching
 
 class BasicCache(BaseCaching):
-    """This class
-    """
     
+    
+    def __init__(self):
+        """ Initiliaze
+        """
+        super().__init__()
 
     def put(self, key, item):
         """ Add an item in the cache
         """
-        if key and item:
+        if key  and item:
             self.cache_data[key] = item
         else:
             pass
@@ -19,6 +22,7 @@ class BasicCache(BaseCaching):
     def get(self, key):
         """ Get an item by key
         """
-        if key and self.cache_data.get(key):
-            return self.cache_data.get(key)
-        return None
+        try:
+            return self.cache_data[key]
+        except Exception:
+            pass
