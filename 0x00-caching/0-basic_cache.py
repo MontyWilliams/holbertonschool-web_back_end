@@ -6,7 +6,7 @@ from base_caching import BaseCaching
 
 class BasicCache(BaseCaching):
     """ BasicCache inherits from base_caching.
-        - extends put to add to cache
+        - extends put to add to cache without limit
         - extends getter to get a value from cache
     """
 
@@ -24,7 +24,8 @@ class BasicCache(BaseCaching):
             pass
 
     def get(self, key):
-        """ Get an item by key
+        """ Must return the value in self.cache_data linked to key.
+            - If key is None or if the key doesn’t exist in self.cache_data, return None.
         """
         try:
             return self.cache_data[key]
