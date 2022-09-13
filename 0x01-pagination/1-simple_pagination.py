@@ -11,10 +11,11 @@ from typing import List
 def index_range(page: int, page_size: int) -> tuple:
     """Get start and ending position
     """
-    start = ((page - 1) * page_size)
-    end = (start + page_size)
-    result = (start, end)
-    return result
+    if page and page_size:
+        start = ((page - 1) * page_size)
+        end = (start + page_size)
+        result = (start, end)
+        return result
 
 
 class Server:
@@ -32,7 +33,7 @@ class Server:
             with open(self.DATA_FILE) as f:
                 reader = csv.reader(f)
                 dataset = [row for row in reader]
-        self.__dataset = dataset[1:]
+            self.__dataset = dataset[1:]
 
         return self.__dataset
 
@@ -47,5 +48,5 @@ class Server:
         pages = []
         if start >= len(self.dataset()):
             return pages
-            pages = self.dataset()
+        pages = self.dataset()
         return pages[start:end]
