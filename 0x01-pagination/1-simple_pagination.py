@@ -39,8 +39,8 @@ class Server:
         index_range func to find correct indexes
         if args are out of range return empty list
     """
-    assert type(int(page))  > 0
-    assert type(int(page_size)) > 0
+    assert type(int(page)) == int and page > 0
+    assert type(page_size) == int and page_size > 0
     start, end = index_range(page, page_size)
     pages = []
     if start >= len(self.dataset()):
