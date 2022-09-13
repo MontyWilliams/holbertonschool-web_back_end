@@ -5,7 +5,7 @@
 
 import csv
 import math
-from typing import List
+from typing import List, Dict, Any
 
 
 def index_range(page: int, page_size: int) -> tuple:
