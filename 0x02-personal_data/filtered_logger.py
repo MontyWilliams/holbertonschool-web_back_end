@@ -4,7 +4,7 @@
 import re
 
 
-def filter_datum(fields: list, redaction: str, message: str, separator: str):
+def filter_datum(fields: list, redaction: str, message: str, separator: str)-> str:
     """ replace occurrences of certain fields
         the log message passed in will be replaced
         with xxx
