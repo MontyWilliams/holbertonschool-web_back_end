@@ -28,7 +28,7 @@ class RedactingFormatter(logging.Formatter):
             self.fields,
             self.REDACTION, super().format(record), self.SEPARATOR)
 
-    
+
 def get_logger() -> logging.Logger:
     """
     Implement a get_logger function that takes no arguments
