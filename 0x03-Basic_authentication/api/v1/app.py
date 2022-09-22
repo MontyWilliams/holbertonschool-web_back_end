@@ -25,18 +25,7 @@ def not_found(error) -> str:
     """
     return jsonify({"error": "Not found"}), 404
 
-@app.before_request
-def before_request_handler():
-    """before_request handler"""
-    excluded = ['/api/v1/status/',
-                '/api/v1/unauthorized/']
 
-    if auth is not None and auth.require_auth(request.path, excluded):
-        if auth.authorization_header(request) is None:
-            abort(401)
-
-        if auth.current_user(request) is None:
-            abort(403)
 
 
 if __name__ == "__main__":
