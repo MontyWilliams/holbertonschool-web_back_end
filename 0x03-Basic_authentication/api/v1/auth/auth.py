@@ -21,10 +21,10 @@ class Auth():
         return True
 
     def authorization_header(self, request=None) -> str:
-        """ ath header. If request doesn’t contain the header key Authorization, returns None
+        """ ath header. If request doesn’t contain header, none
             Otherwise, return the value of the header request Authorizatio
         """
-        if request is  None:
+        if request is None:
             return None
         if not request.headers.get("Authorization"):
             return None
