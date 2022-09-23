@@ -10,6 +10,8 @@ class BasicAuth(Auth):
     """ inherit from auth
     """
     def extract_base64_authorization_header(self, authorization_header: str) -> str:
+        """ extract authorization header and do some checks on it
+        """
         if authorization_header == None:
             return None
         if not isinstance(authorization_header, str):
