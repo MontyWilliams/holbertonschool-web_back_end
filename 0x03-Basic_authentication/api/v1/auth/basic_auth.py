@@ -31,9 +31,8 @@ class BasicAuth(Auth):
             ) -> str:
         """ Decode bru
         """
-        if base64_authorization_header is None:
-            return None
-        if not type(base64_authorization_header) == str:
+        if base64_authorization_header is None\
+                or not type(base64_authorization_header) == str:
             return None
         try:
             baseEncode = base64_authorization_header.encode('utf-8')
