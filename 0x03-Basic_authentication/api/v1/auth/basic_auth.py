@@ -4,6 +4,7 @@ Basic Authenication
 """
 import base64
 from typing import Tuple
+from models.user import User
 from api.v1.auth.auth import Auth, TypeVar
 
 
