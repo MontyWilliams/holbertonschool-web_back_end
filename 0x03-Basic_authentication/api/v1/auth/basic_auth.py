@@ -27,15 +27,15 @@ class BasicAuth(Auth):
     def decode_base64_authorization_header(
             self, base64_authorization_header: str
             ) -> str:
-            """ Decode bru
-            """
-            if base64_authorization_header is None:
-                return None
-            if not type(base64_authorization_header) == str:
-                return None
-            try:
-                baseEncode = base64_authorization_header.encode('utf-8')
-                baseDecode  = base64.b64decode(baseEncode)
-                return baseDecode.decode('utf-8')
-            except Exception:
-                return None
+        """ Decode bru
+        """
+        if base64_authorization_header is None:
+            return None
+        if not type(base64_authorization_header) == str:
+            return None
+        try:
+            baseEncode = base64_authorization_header.encode('utf-8')
+            baseDecode = base64.b64decode(baseEncode)
+            return baseDecode.decode('utf-8')
+        except Exception:
+            return None
