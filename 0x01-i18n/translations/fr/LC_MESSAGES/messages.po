@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-10-07 15:18-0600\n"
-"PO-Revision-Date: 2022-10-07 15:20-0600\n"
+"POT-Creation-Date: 2022-10-07 15:39-0600\n"
+"PO-Revision-Date: 2022-10-07 15:41-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -20,9 +20,9 @@ msgstr ""
 
 #: 3-app.py:23
 msgid "home_title"
-msgstr ""
+msgstr "Bienvenue chez Holberton"
 
 #: 3-app.py:24
 msgid "home_header"
-msgstr ""
+msgstr "Bonjour monde!"
 
