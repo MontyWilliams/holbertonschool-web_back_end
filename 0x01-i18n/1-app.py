@@ -9,8 +9,8 @@ babel = Babel(app)
 
 
 class Config(object):
-    """ Configure class is passed in object which is a 
-        default value in pythonthat isnherits from the base class 
+    """ Configure class is passed in object which is a
+        default value in pythonthat isnherits from the base class
         but possess no attributes and cant be given any
     """
     LANGUAGES = ["en", "fr"]
