@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-10-07 10:37-0600\n"
-"PO-Revision-Date: 2022-10-07 10:37-0600\n"
+"POT-Creation-Date: 2022-10-07 15:18-0600\n"
+"PO-Revision-Date: 2022-10-07 15:20-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -17,4 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+
+#: 3-app.py:23
+msgid "home_title"
+msgstr ""
+
+#: 3-app.py:24
+msgid "home_header"
+msgstr ""
 
