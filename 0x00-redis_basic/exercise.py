@@ -35,6 +35,7 @@ def count_calls(method: Callable) -> Callable:
         return method(self, *args, **kwargs)
     return wrapper
 
+
 class Cache:
     """ Class initialize redis as private var
          with 2 methods
@@ -47,7 +48,6 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb()
 
-
     @call_history
     @count_calls
     def store(self, data: Union[str, bytes, int, float]) -> str:
@@ -58,7 +58,6 @@ class Cache:
         key = str(uuid.uuid4())
         self._redis.set(key, data)
         return key
-
 
     def get(self, key: str,
             fn: Optional[Callable] = None) -> Union[str, bytes, int, float]:
@@ -72,13 +71,11 @@ class Cache:
             return fn(data)
         return data
 
-
     def get_str(self, key: str) -> str:
         """parametrize Cache.get to str
         """
         data = self._redis.get(key)
         return data.decode("utf-8")
-
 
     def get_int(self, key: str) -> int:
         """parametrize Cache.get to int
