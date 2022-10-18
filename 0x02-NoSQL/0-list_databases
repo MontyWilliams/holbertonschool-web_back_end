@@ -1,0 +1,3 @@
+// A simplescript to start mongoDB and list dbs
+
+show dbs
