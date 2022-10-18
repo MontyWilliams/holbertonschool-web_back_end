@@ -5,7 +5,7 @@
 
 def list_all(mongo_collection):
     """ Get all items in a collection if any
-    - if not return an empty list
+    if not return an empty list
     """
     return mongo_collection.find() or []
 
