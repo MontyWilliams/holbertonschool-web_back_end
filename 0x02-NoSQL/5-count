@@ -1,2 +1,3 @@
 // Script to count instances
+
 db.school.count()
