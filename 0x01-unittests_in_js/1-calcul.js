@@ -1,19 +1,18 @@
-// Used Math n
 function calculateNumber(type, a, b) {
-    switch (type) {
-      case 'SUM':
-        return Math.round(a) + Math.round(b);   
-        break;
-      case 'SUBTRACT':
-      return Math.round(a) - Math.round(b);    
-        break;
-      case 'DIVIDE':
-        return Math.round(a) - Math.round(b);    
-          break;
-      default:
-        return console.log('put in proper entry type')
-        break;
+  const A = Math.round(a);
+  const B = Math.round(b);
+  let answer = 0;
+  if (type === 'SUM') {
+    answer = A + B;
+  } else if (type === 'SUBTRACT') {
+    answer = A - B;
+  } else if (type === 'DIVIDE') {
+    if (B === 0) {
+      return 'Error';
     }
-    return Math.round(a) + Math.round(b);
+    answer = A / B;
   }
-  module.exports = calculateNumber;
+  return answer;
+}
+
+module.exports = calculateNumber;
