@@ -30,5 +30,6 @@ describe('calculateNumber type == SUM', () => {
     it('Divide positive ints', function () {
       assert.strictEqual(calculateNumber('DIVIDE', 1, 3), 0.3333333333333333);
       assert.strictEqual(calculateNumber('DIVIDE', 1, 2), 0.5);
+      assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error');
     });
   });
