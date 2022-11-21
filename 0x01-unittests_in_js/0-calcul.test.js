@@ -5,7 +5,11 @@ describe('calculateNumber', () => {
     // eslint-disable-next-line jest/prefer-expect-assertions
     it('postive intergers', function () {
       assert.strictEqual(calculateNumber(1, 3), 4);
-      assert.strictEqual(calculateNumber(2.6, 1.1 ), 4);
+      assert.strictEqual(calculateNumber(1, 3.7), 5);
+      assert.strictEqual(calculateNumber(1.2, 3.7), 5);
+      assert.strictEqual(calculateNumber(1.5, 3.7), 6);
+      assert.strictEqual(calculateNumber(3.7, 1), 5);
+      assert.strictEqual(calculateNumber(3.7, 1.2), 5);
     });
     // eslint-disable-next-line jest/prefer-expect-assertions
     it('negative intergers', () => {
