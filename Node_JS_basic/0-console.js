@@ -1,3 +1,3 @@
-module.export = function displayMessage(e){
-    console.log(e)
+module.exports = function displayMessage(e) {
+   process.stdout.write(e)
 }
