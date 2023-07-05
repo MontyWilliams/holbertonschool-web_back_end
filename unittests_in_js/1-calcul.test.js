@@ -24,5 +24,6 @@ describe('calculateNumber if type is divide', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 10, 1.8), 5);
     assert.strictEqual(calculateNumber('DIVIDE', 10.3, 1.8), 5);
     assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error');
+    assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0).toLowerCase(), 'error');
   })
 })
