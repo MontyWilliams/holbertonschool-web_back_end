@@ -21,6 +21,8 @@ describe('calculateNumber type is SUBTRACT', () => {
 describe('calculateNumber if type is divide', () => {
   it('should divide  bruh without rounding', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
+    assert.strictEqual(calculateNumber('DIVIDE', 10, 1.8), 5);
+    assert.strictEqual(calculateNumber('DIVIDE', 10.3, 1.8), 5);
     assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error');
   })
 })
