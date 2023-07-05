@@ -7,10 +7,10 @@ function calculateNumber(type, a, b) {
       return Math.round(a) - Math.round(b);
       break;
     case 'DIVIDE':
-      if (b !== 0) {
-        return Math.round(a) / Math.round(b);
-      } else {
+      if (b === 0) {
         return 'Error';
+      } else {
+        return Math.round(a) / Math.round(b);
       }
       break;
   }
