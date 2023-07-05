@@ -8,7 +8,7 @@ function calculateNumber(type, a, b) {
       break;
     case 'DIVIDE':
       if (b === 0) {
-        return 'Error';
+        return new Error('Error');
         break;
       } else {
         return Math.round(a) / Math.round(b);
