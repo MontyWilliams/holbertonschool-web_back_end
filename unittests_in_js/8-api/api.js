@@ -2,11 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app
-  .get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Welcome to the payment system')
   });
-  .listen(7865, () => {
+app.listen(7865, () => {
     console.log('Server is listening on -ort 7865');
   });
 
